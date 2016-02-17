@@ -10,17 +10,21 @@ Place the rplugin folder in your neovim directory or install using your favourit
 manager. 
 
 Vundle:
-    Plugin 'TheZoq2/neovim-auto-autoread'
+`Plugin 'TheZoq2/neovim-auto-autoread'`
 
 Add the following to your .vimrc 
+```
     "Autoreload files when changed externally
     set autoread
     if has('nvim') "Prevent errors when using standard vim
-        autocmd VimEnter * AutoreadLoop 
+        autocmd VimEnter * AutoreadLoop
     endif
+```
+
+Alternativley you can start the `AutoreadLoop` function manually when you want automatic reloads.
 
 #Configuration
 If you feel like the autoread is too slow or is using too much performance, you can edit `rplugin/python/autoreload.py` and change the value in time.sleep to the amount of seconds to wait between reloads
 
 #Standard vim alternative
-If you are using standard vim you can use [this](https://bitbucket.org/Carpetsmoker/auto_autoread.vim) plugin instead
+If you are using standard vim you can use [this](https://bitbucket.org/Carpetsmoker/auto_autoread.vim) plugin instead.
