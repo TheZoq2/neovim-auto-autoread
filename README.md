@@ -12,6 +12,10 @@ manager.
 Vundle:
 `Plugin 'TheZoq2/neovim-auto-autoread'`
 
+Once installed, run the following command to update the remote plugin manifest:
+
+`:UpdateRemotePlugins`
+
 Add the following to your .vimrc 
 ```
     "Autoreload files when changed externally
